@@ -1,0 +1,44 @@
+============================================================
+ONBOARDOPS VERIFICATION REPORT
+============================================================
+
+DATE:
+Tuesday 11 August 2026 11:15:28 PM IST
+
+===== USERS =====
+uid=1001(PERSON1) gid=1002(PERSON1) groups=1002(PERSON1),1001(DEVTEAM)
+uid=1002(PERSON2) gid=1003(PERSON2) groups=1003(PERSON2),1001(DEVTEAM)
+uid=1003(PERSON3) gid=1004(PERSON3) groups=1004(PERSON3),1001(DEVTEAM)
+
+===== GROUP =====
+DEVTEAM:x:1001:PERSON1,PERSON2,PERSON3
+
+===== PASSWORD POLICY =====
+
+===== SUDO =====
+Matching Defaults entries for PERSON1 on localhost:
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE",
+    env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY",
+    secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin
+
+User PERSON1 may run the following commands on localhost:
+    (ALL) ALL
+User PERSON2 is not allowed to run sudo on localhost.
+User PERSON3 is not allowed to run sudo on localhost.
+
+===== SUDOERS FILE =====
+#1001 ALL=(ALL) ALL
+-r--r-----. 1 root root 20 Aug 11 23:05 /etc/sudoers.d/ONBOARDOPS
+
+===== SHARED DIRECTORY =====
+drwxrws--T. 2 root DEVTEAM 65 Aug 11 23:12 /shared/project
+total 0
+-rw-rw----. 1 PERSON1 DEVTEAM 0 Aug 11 23:07 PERSON1.txt
+-rw-rw----. 1 PERSON2 DEVTEAM 0 Aug 11 23:10 PERSON2.txt
+-rw-rw----. 1 PERSON1 DEVTEAM 0 Aug 11 23:12 SGID-test.txt
+
+===== UMASK =====
+umask 0007
+
+===== PROVISION SCRIPT =====
+-rwxr-xr-x. 1 root root 564 Aug 11 22:56 PROVISION.sh

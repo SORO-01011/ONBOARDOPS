@@ -1,0 +1,180 @@
+    1  dnf install comannd-line-assistant
+    2  mkdir /home/projectdata
+    3  touch /home/projectdata/report.txt
+    4  touch /home/projectdata/employee.txt
+    5  touch /home/projectdata/backup.txt
+    6  cp /home/projectdata/report.txt /home/projectdata/backup.txt
+    7  mv /home/projectdata/employee.txt /home/projectdata/staff.txt
+    8  ls -la /home/projectdata
+    9  ipconfig
+   10  ip addr
+   11  top
+   12  cat /etc/shadow
+   13  clear
+   14  whoami
+   15  mkdir -p /root/ONBOARDOPS
+   16  cd /root/ONBOARDOPS
+   17  touch commands.txt
+   18  echo "cat /etc/redhat-release" >> commands.txt
+   19  touch provision.sh
+   20  chmod +x provision.sh
+   21  ls -l provision.sh
+   22  groupadd DEVTEAM
+   23  getent group DEVTEAM
+   24  echo "groupadd devteam" >> commands.txt
+   25  useradd -m -s /bin/bash PERSON1
+   26  useradd -m -s /bin/bash PERSON2
+   27  useradd -m -s /bin/bash PERSON3
+   28  id PERSON1
+   29  id PERSON2
+   30  id PERSON3
+   31  ls -ld /home/PERSON1 /home/PERSON2 /home/PERSON3
+   32  usermod -aG devteam PERSON1
+   33  usermod -aG DEVTEAM PERSON1
+   34  usermod -aG devteam PERSON2
+   35  usermod -aG DEVTEAM PERSON2
+   36  usermod -aG DEVTEAM PERSON3
+   37  id PERSON1
+   38  id PERSON2
+   39  id PERSON3
+   40  chage -M 60 -W 7 -d 0 PERSON1
+   41  chage -M 60 -W 7 -d 0 PERSON2
+   42  chage -M 60 -W 7 -d 0 PERSON3
+   43  chage -l PERSON1
+   44  chage -l PERSON2
+   45  chage -l PERSON3
+   46  passwd PERSON1
+   47  passwd PERSON2
+   48  passwd PERSON3
+   49  visudo -f /etc/sudoers.d/onboardops
+   50  fg %1
+   51  visudo -c
+   52  exit
+   53  tree
+   54  cd   ONNNBOOOARDOPS
+   55  cd   ONBOARDOPS
+   56  touuch PROVISION.sh
+   57  touch PROVISION.sh
+   58  chmod +x PROVISION.sh
+   59  ls -l PROVISION.sh
+   60  groupadd DEVTEAM
+   61  getent groupadd DEVTEAM
+   62  echo "groupadd DEVTEAM" >> commands.txt
+   63  useradd -m -s /bin/bash PERSON1
+   64  id PERSON1
+   65  id PERSON2
+   66  id PERSON3
+   67  chage -l PERSON1
+   68  chage -l PERSON2
+   69  chage -l PERSON3
+   70  visudo -c
+   71  visudo -f /etc/sudoers.d/ONBOARDOPS
+   72  kill %1
+   73  jobs
+   74  cat /etc/sudoers.d/ONBOARDOPS
+   75  chmod 440 /etc/sudoers.d/ONBOARDOPS
+   76  ls -l /etc/sudoers.d/ONBOARDOPS
+   77  chmod 440 /etc/sudoers.d/lab-sudo
+   78  visudo -c
+   79  kill %1
+   80  cat /etc/sudoers.d/ONBOARDOPS
+   81  chmod 440 /etc/sudoers.d/ONBOARDOPS
+   82  chmod 440 /etc/sudoers.d/lab-sudo
+   83  visudo -c
+   84  chmod 440 /etc/sudoers.d/onboardops
+   85  visudo -c
+   86  jobs
+   87  ls -l /etc/sudoers.d/
+   88  tree
+   89  cd ..
+   90  tree
+   91  cd ONBOARDOPS
+   92  rmdir provision.sh
+   93  rm provision.sh
+   94  tree
+   95  vim PROVISION.sh
+   96  chmod +x PROVISION.sh
+   97  bash -n PROVISION.sh
+   98  cat PROVISION.sh
+   99  kill %2
+  100  jobs
+  101  vim PROVISION.sh
+  102  fg %2
+  103  ls -l PROVISION.sh
+  104  cat PROVISION.sh
+  105  cat > PROVISION.sh
+  106  cat PROVISION.sh
+  107  chmod +x PROVISION.sh
+  108  bash -n PROVISION.sh
+  109  ls -l PROVISION.sh
+  110  id PERSON1
+  111  cat /etc/sudoers.d/ONBOARDOPS
+  112  ls -l /etc/sudoers.d/ONBOARDOPS
+  113  chage -M 60 -W 7 -d 0 $U
+  114  echo "#$(id -u PERSON1) ALL=(ALL) ALL" > /etc/sudoers.d/ONBOARDOPS
+  115  cat /etc/sudoers.d/ONBOARDOPS
+  116  chmod 440 /etc/sudoers.d/ONBOARDOPS
+  117  visudo -c
+  118  id PERSON1
+  119  chage -l PERSON1
+  120  chage -l PERSON2
+  121  chage -l PERSON3
+  122  ls -ld /shared/project
+  123  mkdir -p /shared/project
+  124  chown root:DEVTEAM /shared/project
+  125  chmod 3770 /shared/project
+  126  ls -ld /shared/project
+  127  getent group DEVTEAM
+  128  echo "umask 0007" > /etc/profile.d/onboardops-umask.sh
+  129  chmod 644 /etc/profile.d/onboardops-umask.sh
+  130  cat /etc/profile.d/onboardops-umask.sh
+  131  cd ..
+  132  tree
+  133  cd ~/ONBOARDOPS
+  134  cat PROVISION.sh
+  135  i
+  136  cat > PROVISION.sh
+  137  cat PROVISION.sh
+  138  chmod +x PROVISION.sh
+  139  bash -n PROVISION.sh
+  140  echo "some line" >> PROVISION.sh
+  141  sed -i '$d' PROVISION.sh
+  142  tail -5 PROVISION.sh
+  143  echo 'echo "ONBOARDOPS SETUP COMPLETED."' >> PROVISION.sh
+  144  tail -5 PROVISION.sh
+  145  bash -n PROVISION.sh
+  146  ./PROVISION.sh
+  147  id PERSON1
+  148  id PERSON2
+  149  id PERSON3
+  150  getent group DEVTEAM
+  151  sudo -l -U PERSON1
+  152  sudo -l -U PERSON2
+  153  cat /etc/sudoers.d/ONBOARDOPS
+  154  ls -l /etc/sudoers.d/ONBOARDOPS
+  155  ls -ld /shared/project
+  156  cat /etc/profile.d/onboardops-umask.sh
+  157  su - PERSON1
+  158  su - PERSON2
+  159  ls -l /shared/project
+  160  su - PERSON2
+  161  su - PERSON1
+  162  ls -l /shared/project/SGID-test.txt
+  163  cd ~/ONBOARDOPS
+  164  { echo "============================================================"; echo "ONBOARDOPS VERIFICATION REPORT"; echo "============================================================"; echo; echo "DATE:"; date; echo; echo "===== USERS ====="; id PERSON1; id PERSON2; id PERSON3; echo; echo "===== GROUP ====="; getent group DEVTEAM; echo; echo "===== PASSWORD POLICY ====="; chage -l PERSON1; chage -l PERSON2; chage -l PERSON3; echo; echo "===== SUDO ====="; sudo -l -U PERSON1; sudo -l -U PERSON2; sudo -l -U PERSON3; echo; echo "===== SUDOERS FILE ====="; cat /etc/sudoers.d/ONBOARDOPS; ls -l /etc/sudoers.d/ONBOARDOPS; echo; echo "===== SHARED DIRECTORY ====="; ls -ld /shared/project; ls -l /shared/project; echo; echo "===== UMASK ====="; cat /etc/profile.d/onboardops-umask.sh; echo; echo "===== PROVISION SCRIPT ====="; ls -l PROVISION.sh; bash -n PROVISION.sh; } > verification.txt 2>&1  
+  165  cat verification.txt
+  166  history > commands.txt
+  167  wc -l commands.txt
+  168  cat > README.md
+  169  tree ~/ONBOARDOPS
+  170  exit
+  171  tree ~/ONBOARDOPS
+  172  exit
+  173  tree
+  174  cd ONBOARDOPS
+  175  tree
+  176  id PERSON1
+  177  cat PROVISION.sh
+  178  ls -ls /shared/project
+  179  cat verification.txt
+  180  history > commands.txt
